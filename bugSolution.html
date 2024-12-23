@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    // Correctly referencing the element
+    const element = document.getElementById("myDiv");
+    if (element) {
+        element.innerHTML = "This text is now changed.";
+    } else {
+        console.error("Element with id 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
